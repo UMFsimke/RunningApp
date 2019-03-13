@@ -22,6 +22,17 @@
 		3006EF1D223937C40037E9BC /* TestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF1C223937C40037E9BC /* TestConfiguration.swift */; };
 		3006EF1F223938160037E9BC /* ReleaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF1E223938160037E9BC /* ReleaseConfiguration.swift */; };
 		3006EF2122393A0B0037E9BC /* Pods_RunningAppServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3006EF2022393A0B0037E9BC /* Pods_RunningAppServer.framework */; };
+		3006EF2522393CF40037E9BC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF2422393CF40037E9BC /* Coordinator.swift */; };
+		3006EF2722393D080037E9BC /* Coordinated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF2622393D080037E9BC /* Coordinated.swift */; };
+		3006EF2922393D220037E9BC /* ParentChildCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF2822393D220037E9BC /* ParentChildCoordinators.swift */; };
+		3006EF2C22393D500037E9BC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF2B22393D500037E9BC /* AppCoordinator.swift */; };
+		3006EF3222393FE20037E9BC /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF3122393FE20037E9BC /* Action.swift */; };
+		3006EF3422393FFB0037E9BC /* Actionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF3322393FFB0037E9BC /* Actionable.swift */; };
+		3006EF37223940350037E9BC /* SwitchRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF36223940350037E9BC /* SwitchRootViewController.swift */; };
+		3006EF3B223941270037E9BC /* UIApplication+CurrentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF3A223941270037E9BC /* UIApplication+CurrentWindow.swift */; };
+		3006EF3E223941590037E9BC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF3D223941590037E9BC /* Constant.swift */; };
+		3006EF40223941730037E9BC /* Constant+RootViewControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF3F223941730037E9BC /* Constant+RootViewControllerTransition.swift */; };
+		3006EF422239603C0037E9BC /* Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF412239603C0037E9BC /* Op.swift */; };
 		30618A78223915F500E9E340 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 30618A77223915F500E9E340 /* Podfile */; };
 		30794FC92239146A006065A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FC82239146A006065A5 /* AppDelegate.swift */; };
 		30794FCB2239146A006065A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FCA2239146A006065A5 /* ViewController.swift */; };
@@ -72,6 +83,17 @@
 		3006EF1C223937C40037E9BC /* TestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConfiguration.swift; sourceTree = "<group>"; };
 		3006EF1E223938160037E9BC /* ReleaseConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseConfiguration.swift; sourceTree = "<group>"; };
 		3006EF2022393A0B0037E9BC /* Pods_RunningAppServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_RunningAppServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3006EF2422393CF40037E9BC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3006EF2622393D080037E9BC /* Coordinated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinated.swift; sourceTree = "<group>"; };
+		3006EF2822393D220037E9BC /* ParentChildCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentChildCoordinators.swift; sourceTree = "<group>"; };
+		3006EF2B22393D500037E9BC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3006EF3122393FE20037E9BC /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		3006EF3322393FFB0037E9BC /* Actionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actionable.swift; sourceTree = "<group>"; };
+		3006EF36223940350037E9BC /* SwitchRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRootViewController.swift; sourceTree = "<group>"; };
+		3006EF3A223941270037E9BC /* UIApplication+CurrentWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+CurrentWindow.swift"; sourceTree = "<group>"; };
+		3006EF3D223941590037E9BC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3006EF3F223941730037E9BC /* Constant+RootViewControllerTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+RootViewControllerTransition.swift"; sourceTree = "<group>"; };
+		3006EF412239603C0037E9BC /* Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Op.swift; sourceTree = "<group>"; };
 		30618A77223915F500E9E340 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30794FC52239146A006065A5 /* RunningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30794FC82239146A006065A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,7 +159,10 @@
 		3006EF11223935F50037E9BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3006EF3C223941510037E9BC /* Constants */,
+				3006EF2322393CE00037E9BC /* Coordinator */,
 				3006EF122239360A0037E9BC /* Configuration */,
+				3006EF412239603C0037E9BC /* Op.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +177,84 @@
 				3006EF1E223938160037E9BC /* ReleaseConfiguration.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3006EF2222393C9C0037E9BC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF35223940260037E9BC /* Actions */,
+				3006EF2A22393D470037E9BC /* Launch */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3006EF2322393CE00037E9BC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF2422393CF40037E9BC /* Coordinator.swift */,
+				3006EF2622393D080037E9BC /* Coordinated.swift */,
+				3006EF2822393D220037E9BC /* ParentChildCoordinators.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3006EF2A22393D470037E9BC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				30794FD12239146B006065A5 /* LaunchScreen.storyboard */,
+				3006EF2B22393D500037E9BC /* AppCoordinator.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		3006EF2F22393FCE0037E9BC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF3022393FD50037E9BC /* Action */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3006EF3022393FD50037E9BC /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF3122393FE20037E9BC /* Action.swift */,
+				3006EF3322393FFB0037E9BC /* Actionable.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		3006EF35223940260037E9BC /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF36223940350037E9BC /* SwitchRootViewController.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		3006EF38223941060037E9BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF39223941140037E9BC /* UIApplication */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3006EF39223941140037E9BC /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF3A223941270037E9BC /* UIApplication+CurrentWindow.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		3006EF3C223941510037E9BC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF3D223941590037E9BC /* Constant.swift */,
+				3006EF3F223941730037E9BC /* Constant+RootViewControllerTransition.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		30794FBC2239146A006065A5 = {
@@ -179,12 +282,14 @@
 		30794FC72239146A006065A5 /* RunningApp */ = {
 			isa = PBXGroup;
 			children = (
+				3006EF38223941060037E9BC /* Extensions */,
+				3006EF2F22393FCE0037E9BC /* Components */,
+				3006EF2222393C9C0037E9BC /* App */,
 				3006EF11223935F50037E9BC /* Models */,
 				30794FC82239146A006065A5 /* AppDelegate.swift */,
 				30794FCA2239146A006065A5 /* ViewController.swift */,
 				30794FCC2239146A006065A5 /* Main.storyboard */,
 				30794FCF2239146B006065A5 /* Assets.xcassets */,
-				30794FD12239146B006065A5 /* LaunchScreen.storyboard */,
 				30794FD42239146B006065A5 /* Info.plist */,
 			);
 			path = RunningApp;
@@ -366,7 +471,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -386,7 +491,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/RunningAppServer/R.generated.swift",
+				$SRCROOT/RunningAppServer/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -404,6 +509,9 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicColor/DynamicColor.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
@@ -415,6 +523,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicColor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
@@ -464,14 +575,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3006EF2C22393D500037E9BC /* AppCoordinator.swift in Sources */,
+				3006EF3E223941590037E9BC /* Constant.swift in Sources */,
+				3006EF37223940350037E9BC /* SwitchRootViewController.swift in Sources */,
+				3006EF3422393FFB0037E9BC /* Actionable.swift in Sources */,
+				3006EF3222393FE20037E9BC /* Action.swift in Sources */,
 				3006EF162239363A0037E9BC /* Configuration.swift in Sources */,
 				30794FCB2239146A006065A5 /* ViewController.swift in Sources */,
 				3006EF142239361F0037E9BC /* ApplicationConfiguration.swift in Sources */,
 				30794FC92239146A006065A5 /* AppDelegate.swift in Sources */,
+				3006EF2722393D080037E9BC /* Coordinated.swift in Sources */,
 				3006EF18223936C40037E9BC /* ConfigurationType.swift in Sources */,
+				3006EF2922393D220037E9BC /* ParentChildCoordinators.swift in Sources */,
 				3006EEDF223927820037E9BC /* R.generated.swift in Sources */,
+				3006EF3B223941270037E9BC /* UIApplication+CurrentWindow.swift in Sources */,
 				3006EF1F223938160037E9BC /* ReleaseConfiguration.swift in Sources */,
 				3006EF1D223937C40037E9BC /* TestConfiguration.swift in Sources */,
+				3006EF2522393CF40037E9BC /* Coordinator.swift in Sources */,
+				3006EF422239603C0037E9BC /* Op.swift in Sources */,
+				3006EF40223941730037E9BC /* Constant+RootViewControllerTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

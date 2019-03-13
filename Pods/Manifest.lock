@@ -4,6 +4,11 @@ PODS:
   - R.swift (5.0.2):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
+  - RxAtomic (4.4.2)
+  - RxCocoa (4.4.2):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.4.2):
+    - RxAtomic (>= 4.4.2, ~> 4.4)
   - SAMKeychain (1.5.3)
   - SnapKit (4.0.1)
   - Swifter (1.4.5)
@@ -12,6 +17,8 @@ DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.3)
   - DynamicColor (~> 4.0.3)
   - R.swift (~> 5.0.2)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - SAMKeychain (~> 1.5.3)
   - SnapKit (~> 4.0.0)
   - Swifter (~> 1.4.5)
@@ -22,6 +29,9 @@ SPEC REPOS:
     - DynamicColor
     - R.swift
     - R.swift.Library
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
     - SAMKeychain
     - SnapKit
     - Swifter
@@ -31,10 +41,13 @@ SPEC CHECKSUMS:
   DynamicColor: bf19b33fe404c59a68e64af95cc6b017346e7e75
   R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
+  RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   Swifter: eb2bc1d192a1c09169c7fefd01971565fa940521
 
-PODFILE CHECKSUM: b96f65090f474d2394a6e3937e1e99db01fb1cde
+PODFILE CHECKSUM: 12d3b1a05e42b481b70999cc0f61cab325981297
 
 COCOAPODS: 1.6.1

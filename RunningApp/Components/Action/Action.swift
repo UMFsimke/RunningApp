@@ -1,0 +1,3 @@
+struct Action {
+    private init() {}
+}

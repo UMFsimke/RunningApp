@@ -26,6 +26,7 @@ target 'RunningApp' do
   # Pods for RunningApp
   pod 'Alamofire', $ALAMOFIRE_VERSION
   rSwift
+  rx
   swifter
   pod 'SAMKeychain', $SAM_KEYCHAIN_VERSION
   pod 'DynamicColor', $DYNAMIC_COLOR_VERSION

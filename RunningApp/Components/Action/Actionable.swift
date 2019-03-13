@@ -1,0 +1,3 @@
+protocol Actionable {
+    func perform()
+}

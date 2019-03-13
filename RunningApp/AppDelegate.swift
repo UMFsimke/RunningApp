@@ -13,6 +13,7 @@ import RunningAppServer
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    fileprivate lazy var coordinator = AppCoordinator()
     fileprivate var devServer: Server?
 
 
@@ -26,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             setupTestEnvironment()
         }
         
-        // Override point for customization after application launch.
+        coordinator.start()
         return true
     }
 
