@@ -1,7 +1,7 @@
 // MARK: - Setup
-import Swifter
 import Rswift
 import Foundation
+import Swifter
 
 extension Server {
     
