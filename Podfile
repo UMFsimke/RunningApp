@@ -1,3 +1,4 @@
+use_frameworks!
 platform :ios, '10.0'
 
 $RX_VERSION = '~> 4.0'
@@ -13,15 +14,25 @@ def rx
   pod 'RxCocoa', $RX_VERSION
 end
 
+def swifter
+    pod 'Swifter', $SWIFTER_VERSION
+end
+
+def rSwift
+    pod 'R.swift', $R_SWIFT_VERSION
+end
 
 target 'RunningApp' do
-  use_frameworks!
-
   # Pods for RunningApp
   pod 'Alamofire', $ALAMOFIRE_VERSION
-  pod 'R.swift', $R_SWIFT_VERSION
-  pod 'Swifter', $SWIFTER_VERSION
+  rSwift
+  swifter
   pod 'SAMKeychain', $SAM_KEYCHAIN_VERSION
   pod 'DynamicColor', $DYNAMIC_COLOR_VERSION
   pod 'SnapKit', $SNAP_KIT_VERSION
+end
+
+target 'RunningAppServer' do
+    rSwift
+    swifter
 end
