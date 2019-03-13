@@ -30,11 +30,11 @@ fileprivate extension AppCoordinator {
             
                 self.eventsSubject.onNext(.fetchingSessionComplete)
                 if sessionExists {
-                    self.openTabVC()
+                    self.startTabBarCoordinator()
                     return
                 }
                 
-                self.openOnboarding()
+                self.startOnboardingCoordinator()
             })
             .disposed(by: db)
     }
@@ -56,19 +56,39 @@ fileprivate extension AppCoordinator {
     }
 }
 
-//MARK: -Navigation
+//MARK: - Presentations
 
 fileprivate extension AppCoordinator {
     
-    func openTabVC() {
+    func startTabBarCoordinator() {
         print("a")
     }
     
-    func openOnboarding() {
-        print ("B")
+    func startOnboardingCoordinator() {
+        let onboardingCoordinator = OnboardingCoordinator()
+        children.push(onboardingCoordinator)
+        createBindings(with: onboardingCoordinator)
+        onboardingCoordinator.start()
     }
 }
 
+//MARK: - Bindings
+
+fileprivate extension AppCoordinator {
+    
+    func createBindings(with onboardingCoordinator: OnboardingCoordinator) {
+        onboardingCoordinator.events
+            .subscribe(onNext: { [weak self] event in
+                switch event {
+                case .loggedIn:
+                    self?.startTabBarCoordinator()
+                case .signedUp:
+                    self?.startTabBarCoordinator()
+                }})
+            .disposed(by: db)
+    }
+    
+}
 //MARK: -Coordinated
 
 extension AppCoordinator {
