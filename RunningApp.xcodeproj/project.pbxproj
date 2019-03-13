@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3006EEDF223927820037E9BC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EEDE223927820037E9BC /* R.generated.swift */; };
 		30618A78223915F500E9E340 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 30618A77223915F500E9E340 /* Podfile */; };
 		30794FC92239146A006065A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FC82239146A006065A5 /* AppDelegate.swift */; };
 		30794FCB2239146A006065A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FCA2239146A006065A5 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3006EEDE223927820037E9BC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		30618A77223915F500E9E340 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		30794FC52239146A006065A5 /* RunningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30794FC82239146A006065A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				30618A77223915F500E9E340 /* Podfile */,
+				3006EEDE223927820037E9BC /* R.generated.swift */,
 				30794FC72239146A006065A5 /* RunningApp */,
 				30794FC62239146A006065A5 /* Products */,
 				81FD1B3F8BF3C62BB39CA182 /* Pods */,
@@ -80,7 +83,6 @@
 				466307912C28117AF2400FD8 /* Pods-RunningApp.debug.xcconfig */,
 				EB272CDFF020CAE76191989E /* Pods-RunningApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +102,7 @@
 			buildConfigurationList = 30794FD72239146B006065A5 /* Build configuration list for PBXNativeTarget "RunningApp" */;
 			buildPhases = (
 				37D4931A94CEDC3E8B3ADF1F /* [CP] Check Pods Manifest.lock */,
+				3006EEDD223926960037E9BC /* ShellScript */,
 				30794FC12239146A006065A5 /* Sources */,
 				30794FC22239146A006065A5 /* Frameworks */,
 				30794FC32239146A006065A5 /* Resources */,
@@ -162,6 +165,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3006EEDD223926960037E9BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		36CFFC8F2C3F2AB7F29D1662 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +247,7 @@
 			files = (
 				30794FCB2239146A006065A5 /* ViewController.swift in Sources */,
 				30794FC92239146A006065A5 /* AppDelegate.swift in Sources */,
+				3006EEDF223927820037E9BC /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
