@@ -80,7 +80,7 @@
                                 <rect key="frame" x="16" y="82" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -99,7 +99,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="M8C-SP-Aqt" id="AEi-bk-zeI"/>
-                        <outlet property="loginButton" destination="Dlb-mZ-HFn" id="a59-qy-opg"/>
+                        <outlet property="loginButton" destination="Dlb-mZ-HFn" id="H0U-c7-O8W"/>
                         <outlet property="passwordTextField" destination="Dut-H2-AJh" id="Szg-UL-4AU"/>
                     </connections>
                 </viewController>

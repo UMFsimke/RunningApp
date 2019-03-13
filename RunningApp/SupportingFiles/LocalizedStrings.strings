@@ -1,2 +1,5 @@
 "invalid.email.error.message" = "You have entered invalid email address. Please fix it and try again";
 "invalid.password.error.message" = "You have entered invalid password. Password should have minimum 8 characters. Please fix it and try again";
+"ok" = "OK";
+"cancel" = "Cancel";
+"error.title" = "Error!";

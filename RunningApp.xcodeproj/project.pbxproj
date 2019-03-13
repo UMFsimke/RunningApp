@@ -52,6 +52,13 @@
 		3006EF8B2239ADE60037E9BC /* LocalizedStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3006EF8A2239ADE60037E9BC /* LocalizedStrings.strings */; };
 		3006EF8D2239AF990037E9BC /* UIViewController+Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF8C2239AF990037E9BC /* UIViewController+Push.swift */; };
 		3006EF8F2239B00F0037E9BC /* Array+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF8E2239B00F0037E9BC /* Array+Stack.swift */; };
+		3006EF912239B2110037E9BC /* UITextField+SafeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF902239B2110037E9BC /* UITextField+SafeText.swift */; };
+		3006EF932239B2410037E9BC /* PresentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF922239B2410037E9BC /* PresentAlert.swift */; };
+		3006EF952239B3750037E9BC /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF942239B3750037E9BC /* PresentViewController.swift */; };
+		3006EF972239B3A10037E9BC /* UIApplication+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF962239B3A10037E9BC /* UIApplication+TopViewController.swift */; };
+		3006EF992239B41D0037E9BC /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF982239B41D0037E9BC /* NSObject+ClassName.swift */; };
+		3006EF9C2239B4AA0037E9BC /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF9B2239B4AA0037E9BC /* AlertAction.swift */; };
+		3006EF9E2239B6140037E9BC /* AlertAction+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF9D2239B6140037E9BC /* AlertAction+Default.swift */; };
 		30618A78223915F500E9E340 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 30618A77223915F500E9E340 /* Podfile */; };
 		30794FC92239146A006065A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FC82239146A006065A5 /* AppDelegate.swift */; };
 		30794FCB2239146A006065A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FCA2239146A006065A5 /* ViewController.swift */; };
@@ -132,6 +139,13 @@
 		3006EF8A2239ADE60037E9BC /* LocalizedStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizedStrings.strings; sourceTree = "<group>"; };
 		3006EF8C2239AF990037E9BC /* UIViewController+Push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Push.swift"; sourceTree = "<group>"; };
 		3006EF8E2239B00F0037E9BC /* Array+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Stack.swift"; sourceTree = "<group>"; };
+		3006EF902239B2110037E9BC /* UITextField+SafeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SafeText.swift"; sourceTree = "<group>"; };
+		3006EF922239B2410037E9BC /* PresentAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAlert.swift; sourceTree = "<group>"; };
+		3006EF942239B3750037E9BC /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
+		3006EF962239B3A10037E9BC /* UIApplication+TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopViewController.swift"; sourceTree = "<group>"; };
+		3006EF982239B41D0037E9BC /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		3006EF9B2239B4AA0037E9BC /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
+		3006EF9D2239B6140037E9BC /* AlertAction+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertAction+Default.swift"; sourceTree = "<group>"; };
 		30618A77223915F500E9E340 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30794FC52239146A006065A5 /* RunningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30794FC82239146A006065A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -252,6 +266,7 @@
 		3006EF2F22393FCE0037E9BC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3006EF9A2239B4A10037E9BC /* Alert */,
 				3006EF3022393FD50037E9BC /* Action */,
 			);
 			path = Components;
@@ -270,6 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				3006EF36223940350037E9BC /* SwitchRootViewController.swift */,
+				3006EF922239B2410037E9BC /* PresentAlert.swift */,
+				3006EF942239B3750037E9BC /* PresentViewController.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -281,6 +298,8 @@
 				3006EF39223941140037E9BC /* UIApplication */,
 				3006EF8C2239AF990037E9BC /* UIViewController+Push.swift */,
 				3006EF8E2239B00F0037E9BC /* Array+Stack.swift */,
+				3006EF902239B2110037E9BC /* UITextField+SafeText.swift */,
+				3006EF982239B41D0037E9BC /* NSObject+ClassName.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				3006EF3A223941270037E9BC /* UIApplication+CurrentWindow.swift */,
+				3006EF962239B3A10037E9BC /* UIApplication+TopViewController.swift */,
 			);
 			path = UIApplication;
 			sourceTree = "<group>";
@@ -366,6 +386,15 @@
 				3006EF8A2239ADE60037E9BC /* LocalizedStrings.strings */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3006EF9A2239B4A10037E9BC /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				3006EF9B2239B4AA0037E9BC /* AlertAction.swift */,
+				3006EF9D2239B6140037E9BC /* AlertAction+Default.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		30794FBC2239146A006065A5 = {
@@ -696,14 +725,17 @@
 				3006EF52223969610037E9BC /* Repository+User.swift in Sources */,
 				3006EF3E223941590037E9BC /* Constant.swift in Sources */,
 				3006EF55223998D90037E9BC /* OnboardingCoordinator.swift in Sources */,
+				3006EF9C2239B4AA0037E9BC /* AlertAction.swift in Sources */,
 				3006EF50223968E50037E9BC /* Repository+Session.swift in Sources */,
 				3006EF37223940350037E9BC /* SwitchRootViewController.swift in Sources */,
+				3006EF952239B3750037E9BC /* PresentViewController.swift in Sources */,
 				3006EF8F2239B00F0037E9BC /* Array+Stack.swift in Sources */,
 				3006EF3422393FFB0037E9BC /* Actionable.swift in Sources */,
 				3006EF632239A2700037E9BC /* LoginViewModel.swift in Sources */,
 				3006EF612239A16F0037E9BC /* User.swift in Sources */,
 				3006EF3222393FE20037E9BC /* Action.swift in Sources */,
 				3006EF162239363A0037E9BC /* Configuration.swift in Sources */,
+				3006EF972239B3A10037E9BC /* UIApplication+TopViewController.swift in Sources */,
 				3006EF45223965F90037E9BC /* Constant+SplashScreen.swift in Sources */,
 				3006EF5E22399F140037E9BC /* OnboardingViewController.swift in Sources */,
 				30794FCB2239146A006065A5 /* ViewController.swift in Sources */,
@@ -712,12 +744,16 @@
 				3006EF4D223968780037E9BC /* Repository.swift in Sources */,
 				30794FC92239146A006065A5 /* AppDelegate.swift in Sources */,
 				3006EF2722393D080037E9BC /* Coordinated.swift in Sources */,
+				3006EF932239B2410037E9BC /* PresentAlert.swift in Sources */,
+				3006EF9E2239B6140037E9BC /* AlertAction+Default.swift in Sources */,
 				3006EF18223936C40037E9BC /* ConfigurationType.swift in Sources */,
+				3006EF912239B2110037E9BC /* UITextField+SafeText.swift in Sources */,
 				3006EF2922393D220037E9BC /* ParentChildCoordinators.swift in Sources */,
 				3006EF672239A7CE0037E9BC /* Constant+Auth.swift in Sources */,
 				3006EEDF223927820037E9BC /* R.generated.swift in Sources */,
 				3006EF3B223941270037E9BC /* UIApplication+CurrentWindow.swift in Sources */,
 				3006EF1F223938160037E9BC /* ReleaseConfiguration.swift in Sources */,
+				3006EF992239B41D0037E9BC /* NSObject+ClassName.swift in Sources */,
 				3006EF652239A7820037E9BC /* LoginError.swift in Sources */,
 				3006EF1D223937C40037E9BC /* TestConfiguration.swift in Sources */,
 				3006EF692239A7FF0037E9BC /* String+IsEmail.swift in Sources */,

@@ -45,9 +45,9 @@ fileprivate extension OnboardingCoordinator {
     }
     
     func showLoginViewController() {
-        let loginVC = LoginViewController()
+        guard let loginVC = R.storyboard.onboarding.loginViewController() else { return }
         createBindings(with: loginVC)
-        push(loginVC)
+        Action.PresentViewController(presentedViewController: loginVC).perform()
     }
     
     func showSignupViewController() {

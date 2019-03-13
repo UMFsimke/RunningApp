@@ -17,9 +17,7 @@ class LoginViewModel {
             }
             .subscribe(onNext: { [weak self] (user) in
                     self?.eventsSubject.onNext(.loggedIn(user: user))
-                }, onError: { [weak self] in
-                    self?.handleError($0)
-                })
+            })
             .disposed(by: db)
     }
     
@@ -34,7 +32,7 @@ class LoginViewModel {
 fileprivate extension LoginViewModel {
     
     func login(for state: State) -> Observable<User> {
-        return Observable<State>.create{ (downstream) in
+        return Observable<State?>.create{ (downstream) in
                 if !state.email.isEmail {
                     downstream.onError(LoginError.invalidEmail)
                     return Disposables.create()
@@ -49,10 +47,15 @@ fileprivate extension LoginViewModel {
                 downstream.onCompleted()
                 return Disposables.create()
             }
+            .do(onError: { [weak self] in
+                self?.handleError($0)
+            })
+            .catchErrorJustReturn(nil)
+            .filter{ $0 != nil }
             .flatMap{ [weak self] (validatedState) -> Observable<User> in
                 guard let `self` = self else { return .empty() }
-                return self.repository.authorize(email: validatedState.email,
-                                                 password: validatedState.password)
+                return self.repository.authorize(email: validatedState!.email,
+                                                 password: validatedState!.password)
             }
     }
 }

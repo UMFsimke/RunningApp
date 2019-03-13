@@ -3,7 +3,7 @@ import RxSwift
 extension Repository {
     
     var hasActiveSession: Bool {
-        return true
+        return false
     }
     
     func refreshSession() -> Observable<Bool> {

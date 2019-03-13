@@ -34,6 +34,8 @@ extension LoginViewController {
         
         bindToViewModel()
         bindToLoginButtonClick()
+        
+        model.start()
     }
     
 }
@@ -61,8 +63,8 @@ fileprivate extension LoginViewController {
         loginButton.rx.tap.asObservable()
             .subscribe(onNext: { [weak self] in
                 guard let `self` = self else { return }
-                self.model.login(email: self.emailTextField.text ?? "",
-                                 password: self.passwordTextField.text ?? "")
+                self.model.login(email: self.emailTextField.safeText,
+                                 password: self.passwordTextField.safeText)
             })
             .disposed(by: db)
     }
@@ -73,7 +75,7 @@ fileprivate extension LoginViewController {
 fileprivate extension LoginViewController {
     
     func presentAlert(withMessage message: String) {
-        Action.PresentAlert(title: Const.loginFailureAlertTitle, message: message, viewController: self).perform()
+        Action.PresentAlert(title: R.string.localizedStrings.errorTitle(), message: message, viewController: self).perform()
     }
     
 }
