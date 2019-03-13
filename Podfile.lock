@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (5.0.0-beta.3)
+  - DynamicColor (4.0.3)
+  - R.swift (5.0.2):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
+  - SAMKeychain (1.5.3)
+  - SnapKit (4.0.1)
+  - Swifter (1.4.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.3)
+  - DynamicColor (~> 4.0.3)
+  - R.swift (~> 5.0.2)
+  - SAMKeychain (~> 1.5.3)
+  - SnapKit (~> 4.0.0)
+  - Swifter (~> 1.4.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DynamicColor
+    - R.swift
+    - R.swift.Library
+    - SAMKeychain
+    - SnapKit
+    - Swifter
+
+SPEC CHECKSUMS:
+  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
+  DynamicColor: bf19b33fe404c59a68e64af95cc6b017346e7e75
+  R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Swifter: eb2bc1d192a1c09169c7fefd01971565fa940521
+
+PODFILE CHECKSUM: 86e2e2ef142a43ff02bef50b9f1aa2d43b54cad7
+
+COCOAPODS: 1.6.1
