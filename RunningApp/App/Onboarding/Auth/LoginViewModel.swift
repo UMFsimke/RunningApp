@@ -11,13 +11,7 @@ class LoginViewModel {
     func start() {
         state.asObservable()
             .skip(1)
-            .flatMapLatest{  [weak self] (state) -> Observable<User> in
-                guard let `self` = self else { return .empty() }
-                return self.login(for: state)
-            }
-            .subscribe(onNext: { [weak self] (user) in
-                    self?.eventsSubject.onNext(.loggedIn(user: user))
-            })
+            .subscribe(onNext: { [weak self] in self?.login(for: $0) })
             .disposed(by: db)
     }
     
@@ -31,32 +25,30 @@ class LoginViewModel {
 
 fileprivate extension LoginViewModel {
     
-    func login(for state: State) -> Observable<User> {
-        return Observable<State?>.create{ (downstream) in
-                if !state.email.isEmail {
-                    downstream.onError(LoginError.invalidEmail)
-                    return Disposables.create()
-                }
-            
-                if state.password.count < Constant.Auth.MinPasswordLength {
-                    downstream.onError(LoginError.invalidPassword)
-                    return Disposables.create()
-                }
-            
-                downstream.onNext(state)
-                downstream.onCompleted()
+    func login(for state: State) {
+        Observable<State>.create{ (downstream) in
+            if !state.email.isEmail {
+                downstream.onError(LoginError.invalidEmail)
                 return Disposables.create()
             }
-            .do(onError: { [weak self] in
-                self?.handleError($0)
-            })
-            .catchErrorJustReturn(nil)
-            .filter{ $0 != nil }
-            .flatMap{ [weak self] (validatedState) -> Observable<User> in
-                guard let `self` = self else { return .empty() }
-                return self.repository.authorize(email: validatedState!.email,
-                                                 password: validatedState!.password)
+            
+            if state.password.count < Constant.Auth.MinPasswordLength {
+                downstream.onError(LoginError.invalidPassword)
+                return Disposables.create()
             }
+            
+            downstream.onNext(state)
+            downstream.onCompleted()
+            return Disposables.create()
+        }
+        .flatMap{ [weak self] (validatedState) -> Observable<User> in
+            guard let `self` = self else { return .empty() }
+            return self.repository.authorize(email: validatedState.email,
+                                             password: validatedState.password)
+        }
+        .subscribe(onNext: { [weak self] _ in self?.eventsSubject.onNext(.loggedIn) },
+                   onError: { [weak self] in self?.handleError($0) })
+        .disposed(by: db)
     }
 }
 
@@ -77,7 +69,7 @@ fileprivate extension LoginViewModel {
 extension LoginViewModel: Coordinated {
     
     enum Event {
-        case loggedIn(user: User)
+        case loggedIn
         case error(message: String)
     }
     
@@ -99,7 +91,12 @@ fileprivate extension LoginViewModel {
                 message = R.string.localizedStrings.invalidPasswordErrorMessage()
             }
         } else {
-            message = ""
+            let httpError: HTTPError? = error as? HTTPError
+            if httpError != nil {
+                message = httpError!.description
+            } else {
+                message = ""
+            }
         }
         
         eventsSubject.onNext(.error(message: message))
