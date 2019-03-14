@@ -21,7 +21,7 @@ extension Server {
             }
             
             if email == Server.duplicateUserEmail {
-                let duplicateAccountErrorJson = "{\"message\": \"We've found a potential duplicate account based on the information you provided: test@gmail.com.\"}"
+                let duplicateAccountErrorJson = "{\"message\": \"User with that email already exists.\"}"
                 
                 return .raw(
                     409,

@@ -51,9 +51,9 @@ fileprivate extension OnboardingCoordinator {
     }
     
     func showSignupViewController() {
-        /*let signupVC = SignupViewController()
+        guard let signupVC = R.storyboard.onboarding.signUpViewController() else { return }
         createBindings(with: signupVC)
-        push(signupVC)*/
+        Action.PresentViewController(presentedViewController: signupVC).perform()
     }
     
     func showResetPasswordViewController() {
@@ -85,6 +85,17 @@ fileprivate extension OnboardingCoordinator {
                     
                 case .requestedPasswordReset:
                     self.showResetPasswordViewController()
+                }
+            })
+            .disposed(by: db)
+    }
+    
+    func createBindings(with signUpViewController: SignUpViewController) {
+        signUpViewController.events
+            .subscribe(onNext: { event in
+                switch event {
+                case .finished:
+                    self.eventsSubject.onNext(.signedUp)
                 }
             })
             .disposed(by: db)

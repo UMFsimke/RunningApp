@@ -45,7 +45,7 @@
 		3006EF5E22399F140037E9BC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF5D22399F140037E9BC /* OnboardingViewController.swift */; };
 		3006EF612239A16F0037E9BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF602239A16F0037E9BC /* User.swift */; };
 		3006EF632239A2700037E9BC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF622239A2700037E9BC /* LoginViewModel.swift */; };
-		3006EF652239A7820037E9BC /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF642239A7820037E9BC /* LoginError.swift */; };
+		3006EF652239A7820037E9BC /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF642239A7820037E9BC /* AuthError.swift */; };
 		3006EF672239A7CE0037E9BC /* Constant+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF662239A7CE0037E9BC /* Constant+Auth.swift */; };
 		3006EF692239A7FF0037E9BC /* String+IsEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF682239A7FF0037E9BC /* String+IsEmail.swift */; };
 		3006EF6C2239A9200037E9BC /* String+MatchesPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF6B2239A9200037E9BC /* String+MatchesPattern.swift */; };
@@ -70,6 +70,9 @@
 		3006EFB22239CFB90037E9BC /* Observable+JsonMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFB12239CFB90037E9BC /* Observable+JsonMappable.swift */; };
 		3006EFB42239CFE70037E9BC /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFB32239CFE70037E9BC /* JSONDecodable.swift */; };
 		3006EFB62239D00B0037E9BC /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFB52239D00B0037E9BC /* JSONDecodeError.swift */; };
+		3039A5CF223A66B900D867F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039A5CE223A66B900D867F8 /* SignUpViewController.swift */; };
+		3039A5D1223A674900D867F8 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039A5D0223A674900D867F8 /* SignUpViewModel.swift */; };
+		3039A5D3223A690700D867F8 /* Repository+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039A5D2223A690700D867F8 /* Repository+Auth.swift */; };
 		30618A78223915F500E9E340 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 30618A77223915F500E9E340 /* Podfile */; };
 		30794FC92239146A006065A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FC82239146A006065A5 /* AppDelegate.swift */; };
 		30794FCB2239146A006065A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FCA2239146A006065A5 /* ViewController.swift */; };
@@ -143,7 +146,7 @@
 		3006EF5D22399F140037E9BC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3006EF602239A16F0037E9BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3006EF622239A2700037E9BC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		3006EF642239A7820037E9BC /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		3006EF642239A7820037E9BC /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		3006EF662239A7CE0037E9BC /* Constant+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Auth.swift"; sourceTree = "<group>"; };
 		3006EF682239A7FF0037E9BC /* String+IsEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IsEmail.swift"; sourceTree = "<group>"; };
 		3006EF6B2239A9200037E9BC /* String+MatchesPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MatchesPattern.swift"; sourceTree = "<group>"; };
@@ -168,6 +171,9 @@
 		3006EFB12239CFB90037E9BC /* Observable+JsonMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+JsonMappable.swift"; sourceTree = "<group>"; };
 		3006EFB32239CFE70037E9BC /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		3006EFB52239D00B0037E9BC /* JSONDecodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodeError.swift; sourceTree = "<group>"; };
+		3039A5CE223A66B900D867F8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3039A5D0223A674900D867F8 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		3039A5D2223A690700D867F8 /* Repository+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Auth.swift"; sourceTree = "<group>"; };
 		30618A77223915F500E9E340 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30794FC52239146A006065A5 /* RunningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30794FC82239146A006065A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -365,6 +371,7 @@
 				3006EF4F223968E50037E9BC /* Repository+Session.swift */,
 				3006EF51223969610037E9BC /* Repository+User.swift */,
 				3006EFA42239BCD30037E9BC /* UserSession.swift */,
+				3039A5D2223A690700D867F8 /* Repository+Auth.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -372,6 +379,8 @@
 		3006EF53223998C90037E9BC /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				3006EF642239A7820037E9BC /* AuthError.swift */,
+				3039A5CD223A66A200D867F8 /* Sign Up */,
 				3006EF5622399B120037E9BC /* Auth */,
 				3006EF54223998D90037E9BC /* OnboardingCoordinator.swift */,
 				3006EF5922399C530037E9BC /* Onboarding.storyboard */,
@@ -385,7 +394,6 @@
 			children = (
 				3006EF5722399B1D0037E9BC /* LoginViewController.swift */,
 				3006EF622239A2700037E9BC /* LoginViewModel.swift */,
-				3006EF642239A7820037E9BC /* LoginError.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -444,6 +452,15 @@
 				3006EFB52239D00B0037E9BC /* JSONDecodeError.swift */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		3039A5CD223A66A200D867F8 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				3039A5CE223A66B900D867F8 /* SignUpViewController.swift */,
+				3039A5D0223A674900D867F8 /* SignUpViewModel.swift */,
+			);
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 		30794FBC2239146A006065A5 = {
@@ -804,6 +821,7 @@
 				3006EF9E2239B6140037E9BC /* AlertAction+Default.swift in Sources */,
 				3006EF18223936C40037E9BC /* ConfigurationType.swift in Sources */,
 				3006EF912239B2110037E9BC /* UITextField+SafeText.swift in Sources */,
+				3039A5D1223A674900D867F8 /* SignUpViewModel.swift in Sources */,
 				3006EF2922393D220037E9BC /* ParentChildCoordinators.swift in Sources */,
 				3006EF672239A7CE0037E9BC /* Constant+Auth.swift in Sources */,
 				3006EEDF223927820037E9BC /* R.generated.swift in Sources */,
@@ -812,14 +830,16 @@
 				3006EF1F223938160037E9BC /* ReleaseConfiguration.swift in Sources */,
 				3006EF992239B41D0037E9BC /* NSObject+ClassName.swift in Sources */,
 				3006EFAE2239C7DC0037E9BC /* HTTPError.swift in Sources */,
-				3006EF652239A7820037E9BC /* LoginError.swift in Sources */,
+				3006EF652239A7820037E9BC /* AuthError.swift in Sources */,
 				3006EF1D223937C40037E9BC /* TestConfiguration.swift in Sources */,
+				3039A5CF223A66B900D867F8 /* SignUpViewController.swift in Sources */,
 				3006EF692239A7FF0037E9BC /* String+IsEmail.swift in Sources */,
 				3006EFA82239BD740037E9BC /* JSON.swift in Sources */,
 				3006EFA12239BACF0037E9BC /* Network.swift in Sources */,
 				3006EFAA2239BE7F0037E9BC /* Observable+DoOnNextOrError.swift in Sources */,
 				3006EF4A2239667E0037E9BC /* Singleton.swift in Sources */,
 				3006EF2522393CF40037E9BC /* Coordinator.swift in Sources */,
+				3039A5D3223A690700D867F8 /* Repository+Auth.swift in Sources */,
 				3006EF422239603C0037E9BC /* Op.swift in Sources */,
 				3006EFB42239CFE70037E9BC /* JSONDecodable.swift in Sources */,
 				3006EF48223966540037E9BC /* Schedulers.swift in Sources */,

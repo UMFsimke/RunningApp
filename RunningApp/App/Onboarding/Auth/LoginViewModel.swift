@@ -28,12 +28,12 @@ fileprivate extension LoginViewModel {
     func login(for state: State) {
         Observable<State>.create{ (downstream) in
             if !state.email.isEmail {
-                downstream.onError(LoginError.invalidEmail)
+                downstream.onError(AuthError.invalidEmail)
                 return Disposables.create()
             }
             
             if state.password.count < Constant.Auth.MinPasswordLength {
-                downstream.onError(LoginError.invalidPassword)
+                downstream.onError(AuthError.invalidPassword)
                 return Disposables.create()
             }
             
@@ -81,21 +81,20 @@ extension LoginViewModel: Coordinated {
 fileprivate extension LoginViewModel {
     
     func handleError(_ error: Error) {
-        let loginError: LoginError? = error as? LoginError
-        let message: String
+        let loginError: AuthError? = error as? AuthError
+        var message: String = ""
         if loginError != nil {
             switch loginError! {
             case .invalidEmail:
                 message = R.string.localizedStrings.invalidEmailErrorMessage()
             case .invalidPassword:
                 message = R.string.localizedStrings.invalidPasswordErrorMessage()
+            default: break
             }
         } else {
             let httpError: HTTPError? = error as? HTTPError
             if httpError != nil {
                 message = httpError!.description
-            } else {
-                message = ""
             }
         }
         

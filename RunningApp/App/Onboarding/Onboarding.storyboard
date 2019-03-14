@@ -107,5 +107,75 @@
             </objects>
             <point key="canvasLocation" x="1111" y="-398"/>
         </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="Lgj-WB-kLn">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="59T-1i-ldx" customClass="SignUpViewController" customModule="RunningApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6hm-y0-XnX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1h-aX-98c">
+                                <rect key="frame" x="16" y="617" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.1248929795" green="0.45882352939999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign Up"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ReG-Ov-dig">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvB-sm-JNC">
+                                <rect key="frame" x="16" y="82" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nn3-on-xkH">
+                                <rect key="frame" x="16" y="128" width="353" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQR-7A-VRY">
+                                <rect key="frame" x="16" y="174" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" textContentType="family-name"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nn3-on-xkH" firstAttribute="top" secondItem="vvB-sm-JNC" secondAttribute="bottom" constant="16" id="3YF-uy-2Qw"/>
+                            <constraint firstItem="5dy-SP-sMH" firstAttribute="trailing" secondItem="w1h-aX-98c" secondAttribute="trailing" constant="16" id="7jM-Zh-gDJ"/>
+                            <constraint firstItem="ReG-Ov-dig" firstAttribute="top" secondItem="5dy-SP-sMH" secondAttribute="top" constant="16" id="ABX-h8-PHG"/>
+                            <constraint firstItem="5dy-SP-sMH" firstAttribute="trailing" secondItem="ReG-Ov-dig" secondAttribute="trailing" constant="16" id="BF3-IR-Irl"/>
+                            <constraint firstItem="WQR-7A-VRY" firstAttribute="leading" secondItem="5dy-SP-sMH" secondAttribute="leading" constant="16" id="CAC-ov-FVW"/>
+                            <constraint firstItem="5dy-SP-sMH" firstAttribute="bottom" secondItem="w1h-aX-98c" secondAttribute="bottom" constant="16" id="DoQ-QI-Pkq"/>
+                            <constraint firstItem="ReG-Ov-dig" firstAttribute="leading" secondItem="5dy-SP-sMH" secondAttribute="leading" constant="16" id="Hb9-js-nyv"/>
+                            <constraint firstItem="WQR-7A-VRY" firstAttribute="top" secondItem="Nn3-on-xkH" secondAttribute="bottom" constant="16" id="IRo-Rj-d0o"/>
+                            <constraint firstItem="5dy-SP-sMH" firstAttribute="trailing" secondItem="vvB-sm-JNC" secondAttribute="trailing" constant="16" id="Lje-C8-MHW"/>
+                            <constraint firstItem="5dy-SP-sMH" firstAttribute="trailing" secondItem="WQR-7A-VRY" secondAttribute="trailing" constant="16" id="SIg-FC-Uo1"/>
+                            <constraint firstItem="Nn3-on-xkH" firstAttribute="leading" secondItem="5dy-SP-sMH" secondAttribute="leading" constant="16" id="UTj-x1-7gy"/>
+                            <constraint firstItem="5dy-SP-sMH" firstAttribute="trailing" secondItem="Nn3-on-xkH" secondAttribute="trailing" constant="6" id="dAx-Ag-SnY"/>
+                            <constraint firstItem="vvB-sm-JNC" firstAttribute="top" secondItem="ReG-Ov-dig" secondAttribute="bottom" constant="16" id="iPp-cE-Qra"/>
+                            <constraint firstItem="w1h-aX-98c" firstAttribute="leading" secondItem="5dy-SP-sMH" secondAttribute="leading" constant="16" id="ngS-cM-7gf"/>
+                            <constraint firstItem="vvB-sm-JNC" firstAttribute="leading" secondItem="5dy-SP-sMH" secondAttribute="leading" constant="16" id="oiX-3i-dUb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5dy-SP-sMH"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ReG-Ov-dig" id="mY6-vR-JpI"/>
+                        <outlet property="firstNameTextField" destination="Nn3-on-xkH" id="vXV-DP-HaZ"/>
+                        <outlet property="lastNameTextField" destination="WQR-7A-VRY" id="OTK-62-k1p"/>
+                        <outlet property="passwordTextField" destination="vvB-sm-JNC" id="w7D-0D-PK8"/>
+                        <outlet property="signUpButton" destination="w1h-aX-98c" id="vdz-Vb-SJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PC-Ou-b1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1874" y="-398"/>
+        </scene>
     </scenes>
 </document>
