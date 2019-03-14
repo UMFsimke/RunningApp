@@ -1,5 +1,7 @@
 {
     "id": "123",
     "firstName": "Aleksandar",
-    "lastName": "Simic"
+    "lastName": "Simic",
+    "email": "valid@email.com",
+    "token": "simpletoken"
 }

@@ -8,6 +8,7 @@ $SWIFTER_VERSION = '~> 1.4.5'
 $SAM_KEYCHAIN_VERSION = '~> 1.5.3'
 $DYNAMIC_COLOR_VERSION = '~> 4.0.3'
 $SNAP_KIT_VERSION = '~> 4.0.0'
+$SWIFTY_JSON_VERSION = '~> 4.0'
 
 def rx
   pod 'RxSwift', $RX_VERSION
@@ -28,6 +29,7 @@ target 'RunningApp' do
   rSwift
   rx
   swifter
+  pod 'SwiftyJSON', $SWIFTY_JSON_VERSION
   pod 'SAMKeychain', $SAM_KEYCHAIN_VERSION
   pod 'DynamicColor', $DYNAMIC_COLOR_VERSION
   pod 'SnapKit', $SNAP_KIT_VERSION

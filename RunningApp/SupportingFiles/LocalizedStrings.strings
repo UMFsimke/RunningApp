@@ -3,3 +3,4 @@
 "ok" = "OK";
 "cancel" = "Cancel";
 "error.title" = "Error!";
+"default.error.description" = "Something went wrong while talking to our servers. Please try again.";

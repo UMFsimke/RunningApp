@@ -1,7 +1,7 @@
 struct TestConfiguration: ApplicationConfiguration {
     
     var domain: String {
-        return "http://localhost:9000"
+        return "https://localhost:9000"
     }
     
     var apiHost: String {

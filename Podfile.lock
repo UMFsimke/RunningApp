@@ -12,6 +12,7 @@ PODS:
   - SAMKeychain (1.5.3)
   - SnapKit (4.0.1)
   - Swifter (1.4.5)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.3)
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - SAMKeychain (~> 1.5.3)
   - SnapKit (~> 4.0.0)
   - Swifter (~> 1.4.5)
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -35,6 +37,7 @@ SPEC REPOS:
     - SAMKeychain
     - SnapKit
     - Swifter
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
@@ -47,7 +50,8 @@ SPEC CHECKSUMS:
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   Swifter: eb2bc1d192a1c09169c7fefd01971565fa940521
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 12d3b1a05e42b481b70999cc0f61cab325981297
+PODFILE CHECKSUM: b014a4a081c29f8438cc1dea11fa6556b31bfede
 
 COCOAPODS: 1.6.1

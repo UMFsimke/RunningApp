@@ -11,6 +11,8 @@ extension Repository {
     }
     
     func authorize(email: String, password: String) -> Observable<User> {
-        return Observable.just(User())
+        return Network.request(.login(email: email, password: password))
+            .mapToType(User.self)
+            .do(onNext: { [weak self] in self?.user = $0 })
     }
 }

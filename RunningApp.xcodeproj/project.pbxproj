@@ -59,6 +59,17 @@
 		3006EF992239B41D0037E9BC /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF982239B41D0037E9BC /* NSObject+ClassName.swift */; };
 		3006EF9C2239B4AA0037E9BC /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF9B2239B4AA0037E9BC /* AlertAction.swift */; };
 		3006EF9E2239B6140037E9BC /* AlertAction+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EF9D2239B6140037E9BC /* AlertAction+Default.swift */; };
+		3006EFA12239BACF0037E9BC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFA02239BACF0037E9BC /* Network.swift */; };
+		3006EFA32239BB660037E9BC /* RunningAppAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFA22239BB660037E9BC /* RunningAppAPI.swift */; };
+		3006EFA52239BCD30037E9BC /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFA42239BCD30037E9BC /* UserSession.swift */; };
+		3006EFA82239BD740037E9BC /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFA72239BD740037E9BC /* JSON.swift */; };
+		3006EFAA2239BE7F0037E9BC /* Observable+DoOnNextOrError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFA92239BE7F0037E9BC /* Observable+DoOnNextOrError.swift */; };
+		3006EFAC2239C7510037E9BC /* Optional+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFAB2239C7510037E9BC /* Optional+Apply.swift */; };
+		3006EFAE2239C7DC0037E9BC /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFAD2239C7DC0037E9BC /* HTTPError.swift */; };
+		3006EFB02239C9380037E9BC /* DescriptiveError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFAF2239C9380037E9BC /* DescriptiveError.swift */; };
+		3006EFB22239CFB90037E9BC /* Observable+JsonMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFB12239CFB90037E9BC /* Observable+JsonMappable.swift */; };
+		3006EFB42239CFE70037E9BC /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFB32239CFE70037E9BC /* JSONDecodable.swift */; };
+		3006EFB62239D00B0037E9BC /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006EFB52239D00B0037E9BC /* JSONDecodeError.swift */; };
 		30618A78223915F500E9E340 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 30618A77223915F500E9E340 /* Podfile */; };
 		30794FC92239146A006065A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FC82239146A006065A5 /* AppDelegate.swift */; };
 		30794FCB2239146A006065A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30794FCA2239146A006065A5 /* ViewController.swift */; };
@@ -146,6 +157,17 @@
 		3006EF982239B41D0037E9BC /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		3006EF9B2239B4AA0037E9BC /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
 		3006EF9D2239B6140037E9BC /* AlertAction+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertAction+Default.swift"; sourceTree = "<group>"; };
+		3006EFA02239BACF0037E9BC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3006EFA22239BB660037E9BC /* RunningAppAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningAppAPI.swift; sourceTree = "<group>"; };
+		3006EFA42239BCD30037E9BC /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		3006EFA72239BD740037E9BC /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		3006EFA92239BE7F0037E9BC /* Observable+DoOnNextOrError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+DoOnNextOrError.swift"; sourceTree = "<group>"; };
+		3006EFAB2239C7510037E9BC /* Optional+Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Apply.swift"; sourceTree = "<group>"; };
+		3006EFAD2239C7DC0037E9BC /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		3006EFAF2239C9380037E9BC /* DescriptiveError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptiveError.swift; sourceTree = "<group>"; };
+		3006EFB12239CFB90037E9BC /* Observable+JsonMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+JsonMappable.swift"; sourceTree = "<group>"; };
+		3006EFB32239CFE70037E9BC /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		3006EFB52239D00B0037E9BC /* JSONDecodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodeError.swift; sourceTree = "<group>"; };
 		30618A77223915F500E9E340 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30794FC52239146A006065A5 /* RunningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30794FC82239146A006065A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +240,7 @@
 				3006EF122239360A0037E9BC /* Configuration */,
 				3006EF412239603C0037E9BC /* Op.swift */,
 				3006EF492239667E0037E9BC /* Singleton.swift */,
+				3006EFAF2239C9380037E9BC /* DescriptiveError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +323,8 @@
 				3006EF8E2239B00F0037E9BC /* Array+Stack.swift */,
 				3006EF902239B2110037E9BC /* UITextField+SafeText.swift */,
 				3006EF982239B41D0037E9BC /* NSObject+ClassName.swift */,
+				3006EFA92239BE7F0037E9BC /* Observable+DoOnNextOrError.swift */,
+				3006EFAB2239C7510037E9BC /* Optional+Apply.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,9 +360,11 @@
 		3006EF4E223968BE0037E9BC /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				3006EF9F2239BAB90037E9BC /* Networking */,
 				3006EF4C223968780037E9BC /* Repository.swift */,
 				3006EF4F223968E50037E9BC /* Repository+Session.swift */,
 				3006EF51223969610037E9BC /* Repository+User.swift */,
+				3006EFA42239BCD30037E9BC /* UserSession.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -395,6 +422,28 @@
 				3006EF9D2239B6140037E9BC /* AlertAction+Default.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		3006EF9F2239BAB90037E9BC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3006EFA62239BD6C0037E9BC /* JSON */,
+				3006EFA02239BACF0037E9BC /* Network.swift */,
+				3006EFA22239BB660037E9BC /* RunningAppAPI.swift */,
+				3006EFAD2239C7DC0037E9BC /* HTTPError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3006EFA62239BD6C0037E9BC /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3006EFA72239BD740037E9BC /* JSON.swift */,
+				3006EFB12239CFB90037E9BC /* Observable+JsonMappable.swift */,
+				3006EFB32239CFE70037E9BC /* JSONDecodable.swift */,
+				3006EFB52239D00B0037E9BC /* JSONDecodeError.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		30794FBC2239146A006065A5 = {
@@ -659,6 +708,7 @@
 				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -673,6 +723,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -720,12 +771,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3006EF8D2239AF990037E9BC /* UIViewController+Push.swift in Sources */,
+				3006EFB02239C9380037E9BC /* DescriptiveError.swift in Sources */,
 				3006EF5822399B1D0037E9BC /* LoginViewController.swift in Sources */,
 				3006EF2C22393D500037E9BC /* AppCoordinator.swift in Sources */,
 				3006EF52223969610037E9BC /* Repository+User.swift in Sources */,
 				3006EF3E223941590037E9BC /* Constant.swift in Sources */,
 				3006EF55223998D90037E9BC /* OnboardingCoordinator.swift in Sources */,
 				3006EF9C2239B4AA0037E9BC /* AlertAction.swift in Sources */,
+				3006EFB62239D00B0037E9BC /* JSONDecodeError.swift in Sources */,
 				3006EF50223968E50037E9BC /* Repository+Session.swift in Sources */,
 				3006EF37223940350037E9BC /* SwitchRootViewController.swift in Sources */,
 				3006EF952239B3750037E9BC /* PresentViewController.swift in Sources */,
@@ -740,9 +793,12 @@
 				3006EF5E22399F140037E9BC /* OnboardingViewController.swift in Sources */,
 				30794FCB2239146A006065A5 /* ViewController.swift in Sources */,
 				3006EF6C2239A9200037E9BC /* String+MatchesPattern.swift in Sources */,
+				3006EFA32239BB660037E9BC /* RunningAppAPI.swift in Sources */,
 				3006EF142239361F0037E9BC /* ApplicationConfiguration.swift in Sources */,
+				3006EFA52239BCD30037E9BC /* UserSession.swift in Sources */,
 				3006EF4D223968780037E9BC /* Repository.swift in Sources */,
 				30794FC92239146A006065A5 /* AppDelegate.swift in Sources */,
+				3006EFB22239CFB90037E9BC /* Observable+JsonMappable.swift in Sources */,
 				3006EF2722393D080037E9BC /* Coordinated.swift in Sources */,
 				3006EF932239B2410037E9BC /* PresentAlert.swift in Sources */,
 				3006EF9E2239B6140037E9BC /* AlertAction+Default.swift in Sources */,
@@ -751,15 +807,21 @@
 				3006EF2922393D220037E9BC /* ParentChildCoordinators.swift in Sources */,
 				3006EF672239A7CE0037E9BC /* Constant+Auth.swift in Sources */,
 				3006EEDF223927820037E9BC /* R.generated.swift in Sources */,
+				3006EFAC2239C7510037E9BC /* Optional+Apply.swift in Sources */,
 				3006EF3B223941270037E9BC /* UIApplication+CurrentWindow.swift in Sources */,
 				3006EF1F223938160037E9BC /* ReleaseConfiguration.swift in Sources */,
 				3006EF992239B41D0037E9BC /* NSObject+ClassName.swift in Sources */,
+				3006EFAE2239C7DC0037E9BC /* HTTPError.swift in Sources */,
 				3006EF652239A7820037E9BC /* LoginError.swift in Sources */,
 				3006EF1D223937C40037E9BC /* TestConfiguration.swift in Sources */,
 				3006EF692239A7FF0037E9BC /* String+IsEmail.swift in Sources */,
+				3006EFA82239BD740037E9BC /* JSON.swift in Sources */,
+				3006EFA12239BACF0037E9BC /* Network.swift in Sources */,
+				3006EFAA2239BE7F0037E9BC /* Observable+DoOnNextOrError.swift in Sources */,
 				3006EF4A2239667E0037E9BC /* Singleton.swift in Sources */,
 				3006EF2522393CF40037E9BC /* Coordinator.swift in Sources */,
 				3006EF422239603C0037E9BC /* Op.swift in Sources */,
+				3006EFB42239CFE70037E9BC /* JSONDecodable.swift in Sources */,
 				3006EF48223966540037E9BC /* Schedulers.swift in Sources */,
 				3006EF40223941730037E9BC /* Constant+RootViewControllerTransition.swift in Sources */,
 			);
